@@ -53,7 +53,7 @@ public class SimpleTextInputFileNormalizer {
 		
 	}
 
-	private static void printObjects(DissimMatrix dissimMatrix, File inputFile, int nObjects, Set<Integer> incomparables) throws IOException {
+	public static void printObjects(DissimMatrix dissimMatrix, File inputFile, int nObjects, Set<Integer> incomparables) throws IOException {
 		BufferedReader buf = new BufferedReader(new FileReader(inputFile));
 		for (int i = 0; i < nObjects; i++) {
 			final String line = buf.readLine();
