@@ -99,6 +99,7 @@ public class WTDHMSimpleFormatRunner {
 		for (int i = 0; i < bestClusters.size(); i++) {
 			outStream.println(i + ": " + Arrays.toString(bestClusters.get(i).getWeights())); 
 		}
+		outStream.println(">>>>>>>>>>>> The best Energy is: "+ bestJ);
 		outStream.println(">>>>>>>>>>>> The F-Measure is: "+ confusionMatrix.fMeasureGlobal());
 		outStream.println(">>>>>>>>>>>> The CR-Index  is: "+ confusionMatrix.CRIndex());
 		outStream.println(">>>>>>>>>>>> OERC Index    is: " + confusionMatrix.OERCIndex());
